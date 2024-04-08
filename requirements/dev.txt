@@ -1,0 +1,19 @@
+-r base.txt
+black
+build
+coveralls
+flake8
+isort~=5.0
+mypy
+nox
+pre-commit
+pyflakes
+pytest
+pytest-benchmark
+pytest-lazy-fixture
+pytest-mock
+sphinx
+towncrier
+twine
+pydevd
+
