@@ -1,0 +1,36 @@
+Source: omegaconf
+Section: python
+Priority: optional
+Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+Uploaders: KERN packaging <packaging@kernsuite.info>
+Build-Depends:
+ debhelper-compat (= 11),
+ dh-python,
+ openstack-pkg-tools,
+ python3-all,
+ python3-setuptools,
+Build-Depends-Indep:
+ default-jre,
+ python3-antlr4,
+ python3-pytest,
+ python3-pytest-runner,
+ python3-pytest-mock,
+ python3-yaml,
+Standards-Version: 4.6.2.0
+Vcs-Browser: https://salsa.debian.org/openstack-team/third-party/python-omegaconf
+Vcs-Git: https://github.com/kernsuite-debian/omegacong.git
+Homepage: https://github.com/omry/omegaconf
+
+Package: python3-omegaconf
+Architecture: all
+Depends:
+ python3-antlr4,
+ python3-yaml,
+ ${misc:Depends},
+ ${python3:Depends},
+Description: hierarchical configuration from multiple sources
+ OmegaConf is a hierarchical configuration system, with support for merging
+ configurations from multiple sources (YAML config files, dataclasses/objects
+ and CLI arguments) providing a consistent API regardless of how the
+ configuration was created.
+

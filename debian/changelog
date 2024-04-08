@@ -1,0 +1,7 @@
+omegaconf (2.3.0-1kern1) jammy; urgency=low
+
+  [ Athanaseus Javas Ramaila ]
+  * Initial debian release 2.3.0
+  * Build for jammy
+
+ -- KERN packaging <packaging@kernsuite.info>  Mon, 08 Apr 2024 10:29:35 +0000
